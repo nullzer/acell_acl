@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "acell-acl"
+version = "0.1.0"
+description = "Small local Python desktop application for Windows 10 and ALT Linux."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Acell ACL" }]
+
+[project.scripts]
+acell-acl = "acell_acl.__main__:main"
+
+[project.optional-dependencies]
+build = ["pyinstaller"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["acell_acl*"]
