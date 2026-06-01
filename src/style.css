@@ -176,8 +176,16 @@ p {
   border-radius: 18px;
   padding: 16px 18px;
   color: #eef6ff;
+  caret-color: #67e8f9;
   background: rgba(2, 6, 23, 0.46);
   outline: none;
+  color-scheme: dark;
+  -webkit-text-fill-color: #eef6ff;
+}
+
+.network-field input::placeholder {
+  color: #8da2c0;
+  -webkit-text-fill-color: #8da2c0;
 }
 
 .network-field input:focus {
